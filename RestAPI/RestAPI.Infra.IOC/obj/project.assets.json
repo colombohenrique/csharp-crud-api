@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "RestAPI.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RestAPI.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RestAPI.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestAPI.Application.dll": {}
+        }
+      },
+      "RestAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/RestAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestAPI.Domain.dll": {}
+        }
+      },
+      "RestAPI.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RestAPI.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RestAPI.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestAPI.Infra.Data.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RestAPI.Application/1.0.0": {
+      "type": "project",
+      "path": "../RestAPI.Application/RestAPI.Application.csproj",
+      "msbuildProject": "../RestAPI.Application/RestAPI.Application.csproj"
+    },
+    "RestAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RestAPI.Domain/RestAPI.Domain.csproj",
+      "msbuildProject": "../RestAPI.Domain/RestAPI.Domain.csproj"
+    },
+    "RestAPI.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../RestAPI.Infra.Data/RestAPI.Infra.Data.csproj",
+      "msbuildProject": "../RestAPI.Infra.Data/RestAPI.Infra.Data.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "RestAPI.Application >= 1.0.0",
+      "RestAPI.Domain >= 1.0.0",
+      "RestAPI.Infra.Data >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jhbco\\.nuget\\packages\\": {},
@@ -39,7 +96,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\dev\\colombo.henrique\\csharp-crud-api\\RestAPI\\RestAPI.Application\\RestAPI.Application.csproj": {
+              "projectPath": "C:\\dev\\colombo.henrique\\csharp-crud-api\\RestAPI\\RestAPI.Application\\RestAPI.Application.csproj"
+            },
+            "C:\\dev\\colombo.henrique\\csharp-crud-api\\RestAPI\\RestAPI.Domain\\RestAPI.Domain.csproj": {
+              "projectPath": "C:\\dev\\colombo.henrique\\csharp-crud-api\\RestAPI\\RestAPI.Domain\\RestAPI.Domain.csproj"
+            },
+            "C:\\dev\\colombo.henrique\\csharp-crud-api\\RestAPI\\RestAPI.Infra.Data\\RestAPI.Infra.Data.csproj": {
+              "projectPath": "C:\\dev\\colombo.henrique\\csharp-crud-api\\RestAPI\\RestAPI.Infra.Data\\RestAPI.Infra.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+FKCVgWv4UQ9OayvozBIkKW1rEcHHiRpXNioLfKa85kClXZ6LuHz+peaH7IUe62iIYCWBYQ3Q/MBeooL8YU5AA==",
+  "dgSpecHash": "PoXWLhaLLLcPhIdbKSwOnJgkpO1+dM8b6ZD2q/SdkV7rVe6sjpE4acM0Ghz6DtcF0/EmCUUz3/I2NL8A7bZFxw==",
   "success": true,
   "projectFilePath": "C:\\dev\\colombo.henrique\\csharp-crud-api\\RestAPI\\RestAPI.Infra.IOC\\RestAPI.Infra.IOC.csproj",
   "expectedPackageFiles": [],
