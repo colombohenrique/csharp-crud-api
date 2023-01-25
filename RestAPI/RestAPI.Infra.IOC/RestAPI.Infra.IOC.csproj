@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RestAPI.Application\RestAPI.Application.csproj" />
+    <ProjectReference Include="..\RestAPI.Domain\RestAPI.Domain.csproj" />
+    <ProjectReference Include="..\RestAPI.Infra.Data\RestAPI.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>
